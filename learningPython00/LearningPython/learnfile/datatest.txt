@@ -1,0 +1,10 @@
+sv01;bánh;10.0
+sv02;kẹo kẹo;20.0
+sv03;bánh giò;200.0
+sv06;bim bim ;100.0
+sv100;sữa;1.0
+sv90;ngu oi la ngu;2.0
+sv50;bánh ngon quá bạn ơi;4.0
+sv30;bánh tro;5.0
+sv08;hí hí;20.0
+a
