@@ -130,12 +130,13 @@ while True:
                 break
             elif x>y:
                 print('Oh, số bạn đoán lớn hơn rồi, đoán lại nhé')
-            elif x<y:
+            else:
                 print('Oh, số bạn đoán nhỏ hơn rồi, đoán lại nhé')
     print('END GAME', 'Số máy là: ',y)
     hoi= input('Ban có muốn chơi tiếp ko?(c/k):')
     if hoi =='k':
         break
+
 
 
 #     TÍNH dt tam giác
