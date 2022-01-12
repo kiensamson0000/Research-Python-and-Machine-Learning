@@ -45,17 +45,6 @@
 # print('Tổng', s)
 
 
-n = int(input("Nhap vao 1 so: "))
-s=0
-if n%2==0:
-    for i in range(2,n+1,2):
-        s += i
-else:
-    for i in range(1,n+1,2):
-        s+=i
-print("tong day so:",s)
-
-
 # #---------------------------------------------------------------------
 
 # print ("chao may nhe")
@@ -109,7 +98,7 @@ print("tong day so:",s)
 # s=0
 
 # for x in range(1,n+1,2):
-#     if x ==3 or x== 11:
+#     if x == 3 or x == 11:
 #         continue
 #     s+= x
 # print('s: ', s)
