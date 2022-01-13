@@ -7,4 +7,3 @@ sv90;ngu oi la ngu;2.0
 sv50;bánh ngon quá bạn ơi;4.0
 sv30;bánh tro;5.0
 sv08;hí hí;20.0
-a

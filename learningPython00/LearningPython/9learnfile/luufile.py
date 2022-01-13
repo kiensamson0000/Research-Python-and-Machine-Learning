@@ -6,5 +6,5 @@ dgia= float(input("Nhập giá: "))
 
 line= ma + ";" + ten + ";" + str(dgia)
 
-ghifile("datatest.txt",line)
+ghifile("testDB.txt",line)
 

@@ -14,9 +14,9 @@ def savefile(path):
 savefile("learningfile")
 
 
-# đọc
-#--------------------
-#
+# đọc file
+# --------------------
+
 def readfile(path):
     file=open(path,'r',encoding="utf-8")
     for line in file:
@@ -25,6 +25,7 @@ def readfile(path):
     file.close()
 
 readfile("learningfile")
+
 
 
 def writefile(path):
@@ -47,15 +48,18 @@ def readfile():
 readfile()
 
 
+
+
 # revision
 #--------------------
 
+#------
+#dữ liệu Sản Phẩm
 
 def ghifile(path,line):
     file=open(path,"a",encoding="utf-8")
     file.writelines(line)
     file.writelines("\n")
-    file.write('a')
     file.close()
 
 def docfile(path):
@@ -67,3 +71,20 @@ def docfile(path):
         arrProduct.append(arr)
     file.close()
     return arrProduct
+
+
+
+
+
+#------
+#Dữ liệu chuỗi số
+
+
+
+
+
+
+
+
+
+
