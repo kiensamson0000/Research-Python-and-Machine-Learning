@@ -4,25 +4,27 @@
 # #               HÀM
 # # ----------------------------------------------------------------------------------
 
-def ptb1(a,b):
-    if a==0 and b==0:
-        return "Vô sô nghiệm"
-    elif a==0 and b!=0:
-        return "vô nghiệm"
-    else:
-        return "x={0}".format(-b/a)
+# def ptb1(a,b):
+#     if a==0 and b==0:
+#         return "Vô sô nghiệm"
+#     elif a==0 and b!=0:
+#         return "vô nghiệm"
+#     else:
+#         return "x={0}".format(-b/a)
 
 
-def xuatdulieu(data):
-    print(data)
+# def xuatdulieu(data):
+#     print(data)
 
 
-kq=ptb1(3,4)
-print('kết quả',kq)
+# kq=ptb1(3,4)
+# print('kết quả',kq)
 
-kq2=ptb1(5,8)
-q = xuatdulieu(kq2)
-print(q)
+# kq2=ptb1(5,8)
+#xuatdulieu(kq2)
+# q = xuatdulieu(kq2)
+
+# print(q) #=> none vi ko co return
 
 
 
@@ -58,19 +60,19 @@ print(q)
 #     g=2
 #     g=g+1
 # tong()
-# print(g) # g = 5
+# print(g) #=> g = 5
 
 # '''
 #     g khai báo ngoài hàm tong(): biến global, toàn cục
-#     g trong hàm tong() là biến global, biến toàn cục
+#     g trong hàm tong() là tham chieu den bien g (global), biến toàn cục
 # '''
 # g=5
 # def tong():
 #     global g
-#     g=2
+#     # g=2
 #     g=g+1
 # tong()
-# print(g) # g = 3
+# print(g) # => g = 3
 
 # '''
 #     có thể dùng global luôn không cần khai báo trc.
@@ -84,7 +86,22 @@ print(q)
 # print(g) # g = 3
 
 
+# '''
+# '''
+# g=5
+# def tong():
+#     g=g+1
+# tong()
+# print(g) #=> erorr dong g=g+1(g trong hàm(cục bộ) => ko khai báo ko hiểu (ko lấy g dòng 1 đc))
+
+
+
+
+
+
 # #    PARAMETER MẶC ĐỊNH
+# # - khi print() => **end** xuất 1 dòng => print("aaa", end='')
+# # -** \t** => xuất cách 1 tab or** \n** => xuất xuống dòng
 # # ----------------------------------------------------------------------------------
 # #
 # #
@@ -94,7 +111,9 @@ print(q)
 #         s+=i
 #     return s
 # print(tong(5))
-# print(tong(5,1))
+# print(tong(5,1), end='\t')
+# print(tong(m=1,n=5))
+
 
 
 
@@ -124,6 +143,8 @@ print(q)
 
 
 
+
+
 # #    HÀM ĐỆ QUY
 # # # ----------------------------------------------------------------------------------
 
@@ -144,7 +165,7 @@ print(q)
 #     return weight/(high*high)
 
 # def phanloai(bmi):
-#     if bmi< 18.5:
+#     if bmi < 18.5:
 #         return 'Bạn gầy!'
 #     elif bmi <24.9:
 #         return ('Bạn bình thường!')
@@ -180,6 +201,9 @@ print(q)
 
 
 
+
+
+
 # #    HÀM TÍNH ROI
 # #----------------------------------------------------------------------------------
 
@@ -204,15 +228,14 @@ print(q)
 # def fibonacci(n):
 #     if n <=2:
 #         return 1
-#     else:
-#         return fibonacci(n-1)+fibonacci(n-2)
+#     return fibonacci(n-1)+fibonacci(n-2)
 
 
 # print('số fibonacci tại n là: ',fibonacci(8))
 
 # def listfibo(n):
 #     for i in range(1,n+1):
-#         print(fibonacci(i),end=' ')
+#         print(fibonacci(i),end='\t')
 
 # listfibo(8)
 
@@ -246,21 +269,19 @@ print(q)
 #     val=5
 #     print(sum2())
 #     print(sum1(5))
-#     print(sum3())
-
+#     print(sum3()) #=> ko tham so val ra bien golbal
 # main()
 
 # #----------------------
 # #
-# def tinh():
-#     for i in range(-3,5):
-#         if i%2!=0:
-#             print(i,end=' ')
-#             print(-i,end=' ')
-#         else:
-#             print(i,end=' ')
-#             print(-i, end=' ')
-# tinh()
+def tinh():
+    for i in range(-3,5):
+        if i%2!=0:
+            print(i, -i,end=' ')
+
+        else:
+            print(i,-i,end=' ')
+tinh()
 
 # #----------------------
 
