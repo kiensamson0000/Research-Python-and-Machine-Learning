@@ -19,6 +19,8 @@
 # print(lst)
 
 
+
+
 # #    duyệt list
 # #----------------------------------------------------------------------------------
 # from random import randrange
@@ -41,6 +43,8 @@
 #     print(lst[i], end='\t')
 
 
+
+
 # #    GÁN GIÁ TRỊ
 # #----------------------------------------------------------------------------------
 
@@ -61,6 +65,8 @@
 # """alias"""
 
 
+
+
 # #    CÁC PHƯƠNG THỨC THƯỜNG DÙNG
 # #----------------------------------------------------------------------------------
 
@@ -70,6 +76,8 @@
 # lst.insert(2,99)
 # print(lst)
 
+
+
 # #-------------------------
 # #chèn cuối danh sách
 
@@ -78,6 +86,8 @@
 # print(lst)
 # lst.append([200,300])
 # print(lst)
+
+
 
 # #-------------------------
 # #xóa phân tử
@@ -95,8 +105,9 @@
 # print(lst)
 
 
+
 # #-------------------------
-# #xóa phân tử
+# # reverse: Dao ds
 
 # lst=[10,20,30,40]
 # print(lst)
@@ -112,8 +123,11 @@
 # print(lst)
 
 
+
+
 # #-------------------------
-# # # sprt ~ sắp xếp
+# # # sort ~ sắp xếp
+
 # from random import randrange
 
 # lst=[0]*10
@@ -145,7 +159,7 @@
 
 # #-------------------------
 # # # LIST ĐA CHIỀU
-# from random import randrange
+from random import randrange
 
 # lst= [
 #     [2,3,4],
@@ -159,6 +173,7 @@
 #         print(col,end='\t')
 #     print()
 # print("*"*10)
+
 # # cách 2:
 # for i in range(len(lst)):
 #     for j in range(len(lst[i])):
@@ -166,22 +181,22 @@
 #     print()
 
 # #khởi tạo list tự động
-# arr2=[]
-# rowsize= int(input("Nhập vào số dòng"))
-# columesize= int(input("Nhập vào số cột"))
-# for i in range(rowsize):
-#     onerow=[]
-#     for j in range(columesize):
-#         onerow.append(randrange(-100,100))
-#     arr2.append(onerow)
-# print("ma trận máy nhập")
+arr2=[]
+rowsize= int(input("Nhập vào số dòng"))
+columesize= int(input("Nhập vào số cột"))
+for i in range(rowsize):
+    onerow=[]
+    for j in range(columesize):
+        onerow.append(randrange(-100,100))
+    arr2.append(onerow)
+print("ma trận máy nhập")
 
-# #duyệt mảnh
 
-# for i in range(len(arr2)):
-#     for j in range(len(arr2[i])):
-#         print(arr2[i][j],end='\t')
-#     print()
+#duyệt mảng
+for i in range(len(arr2)):
+    for j in range(len(arr2[i])):
+        print(arr2[i][j],end='\t')
+    print()
 
 
 # #-------------------------
