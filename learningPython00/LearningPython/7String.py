@@ -11,6 +11,8 @@ name= input('Nhập tên mày= ')
 print(name.upper())
 print(name.lower())
 
+
+
 #
 # CĂN LỀ RJUST, LJUST, CENTER
 # -------------
@@ -27,13 +29,13 @@ print(s3.rjust(18,'*'))
 
 
 
-# CĂN LỀ RJUST, LJUST, CENTER
+# strip
 #-------------
 s1="                      Hello Long gà         "
 print(s1,len(s1))
 s2=s1.strip()
 print(s2, len(s2))
-s3="##   #TRUMP#####"
+s3="##   #TRUMP### ##"
 s4=s3.strip('#')
 print(s4)
 
@@ -106,6 +108,8 @@ print(len(arr))
 for i in arr:
     print(i)
 
+
+
 s1="""Obama
     hahaha
     longka
@@ -117,7 +121,7 @@ for i in arr:
 s3="""sv007;Khuất Huy Kiên;4.7.1999
       sv006;Nguyễn HẢI LONG;6.6.1999
       sv005;Dương Văn Dũng;4.4.1999
-      sv005;Dương Văn Dũng;4.4.1999
+      sv006;Dương Văn Dũng
     """
 arr=s3.splitlines()
 for line in arr:
@@ -125,21 +129,18 @@ for line in arr:
     if len(arr2) ==3:
         print(arr2)
 
-s="sv001;KHUẤT HUY KIÊN; 04/07/1999"
+s="sv001;KHUẤT HUY KIÊN;04/07/1999"
 arr=s.split(";")
 print(arr)
 for line in arr:
     print(line.strip())
-
 s2=","
 s2=s2.join(arr)
 print(s2)
 
 
-
 a="Kim chung"
 b="Trump"
-
 c= a+b
 print(c)
 
@@ -147,9 +148,6 @@ print(c)
 
 #    ÔN TẬP CHUỖI
 #----------------------------------------------------------------------------------
-
-#
-#
 
 def checkdoixung(arr):
     flat= True
@@ -174,42 +172,25 @@ print("BYE BYE EM NHÉ")
 
 
 
-#    ÔN TẬP
-#----------------------------------------------------------------------------------
 
-
+#toi uu chuoi
 #--------------------------
 
 def toiuuchuoi(arr):
     s2=arr
     s2=s2.strip()
     s2=s2.split(' ')
-    for i in s2:
-        print(i)
+    print("aaa",s2)
     s3=""
-    s3=s3.join(s2)
-    return s3
+    for i in s2:
+        if len(i.strip()) !=0:  # (hoac) i != ''
+            s3 = s3 + i +" "
+    return s3.strip()
 
-arr="       KHUẤT H UY KI EN        "
+arr="       KHUẤT   HUY    KIEN        "
 print(arr,len(arr))
 print(toiuuchuoi(arr),len(toiuuchuoi(arr)))
 
-
-
-
-def toiuuchuoi(arr):
-    arr2= arr
-    arr2= arr2.strip()
-    arr2= arr2.split(" ")
-    for i in arr2:
-        print(i)
-    arr3=""
-    arr3=arr3.join(arr2)
-    return arr3
-
-arr="       KHUẤT H UY KI EN        "
-print(arr,len(arr))
-print(toiuuchuoi(arr),len(toiuuchuoi(arr)))
 
 
 
@@ -223,6 +204,7 @@ def xuat(arr):
         print(int(i))
 
 print(xuat(arr))
+
 
 def sochan(arr):
     dem=0
@@ -240,7 +222,6 @@ def soam(arr):
     dem=0
     arr = arr.split(",")
     for i in arr:
-        print(i)
         if int(i)< 0:
             dem+=1
     return dem
@@ -260,9 +241,8 @@ def demsongto(arr):
     dems=0
     arr = arr.split(",")
     for i in arr:
-        print(i)
         x= int(i)
-        if checksongto(x):
+        if checksongto(i):
             dems+=1
     return dems
 print('songto',demsongto(arr))
@@ -281,11 +261,6 @@ def sumtb(arr):
     return sumtb
 
 print('diemtb= ',sumtb(arr))
-
-
-
-
-
 
 
 
@@ -322,10 +297,12 @@ for i in arr:
     else:
         dempa+=1
 
-print("dem kt",demkt)
+print("dem khoang trang",demkt)
 print("Đếm in hoa",deminhoa)
 print("Đém in thường",deminthuong)
 print("Nguyên âm= ",demna)
 print("Phụ âm= ",demna)
-# chưa đếm được số
+
+
+# tuong tu dem: chu so, ky tu dac biet
 
